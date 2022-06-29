@@ -1,0 +1,78 @@
+{
+	"MetricTypes": [
+		{
+			"ElementType": "MessageFlow",
+			"metricPath": "MessageFlow",
+			"eventSubType": "MessageFlow",
+			"metrics": [
+				{"metric": "TotalElapsedTime", "processor": "LongProcessor", "unit": "count"},
+				{"metric": "MaximumElapsedTime", "processor": "LongProcessor", "unit": "count"},
+				{"metric": "MinimumElapsedTime", "processor": "LongProcessor", "unit": "count"},
+				{"metric": "TotalCPUTime", "processor": "LongProcessor", "unit": "count"},
+				{"metric": "MaximumCPUTime", "processor": "LongProcessor", "unit": "count"},
+				{"metric": "MinimumCPUTime", "processor": "LongProcessor", "unit": "count"},
+				{"metric": "CPUTimeWaitingForInputMessage", "processor": "LongProcessor", "unit": "count"},
+				{"metric": "ElapsedTimeWaitingForInputMessage", "processor": "LongProcessor", "unit": "count"},
+				{"metric": "TotalInputMessages", "processor": "LongProcessor", "unit": "count"},
+				{"metric": "TotalSizeOfInputMessages", "processor": "LongProcessor", "unit": "count"},
+				{"metric": "MinimumSizeOfInputMessages", "processor": "LongProcessor", "unit": "count"},
+				{"metric": "MaximumSizeOfInputMessages", "processor": "LongProcessor", "unit": "count"},
+				{"metric": "NumberOfThreadsInPool", "processor": "LongProcessor", "unit": "count"},
+				{"metric": "TimesMaximumNumberOfThreadsReached", "processor": "LongProcessor", "unit": "count"},
+				{"metric": "TotalNumberOfMQErrors", "processor": "LongProcessor", "unit": "count"},
+				{"metric": "TotalNumberOfMessagesWithErrors", "processor": "LongProcessor", "unit": "count"},
+				{"metric": "TotalNumberOfErrorsProcessingMessages", "processor": "LongProcessor", "unit": "count"},
+				{"metric": "TotalNumberOfTimeOutsWaitingForRepliesToAggregateMessages", "processor": "LongProcessor", "unit": "count"},
+				{"metric": "TotalNumberOfCommits", "processor": "LongProcessor", "unit": "count"},
+				{"metric": "TotalNumberOfBackouts", "processor": "LongProcessor", "unit": "count"}
+			]
+		},
+		{
+			"ElementType": "Threads",
+			"metricPath": "Threads",
+			"eventSubType": "Threads",
+			"metrics": [
+				{"metric": "Number", "processor": "IntProcessor", "unit": "count"}
+			]
+		}, 
+		{
+			"ElementType": "ThreadStatistics",
+			"metricPath": "ThreadStatistics/{Number}",
+			"eventSubType": "ThreadStatistics",
+			"metrics": [
+				{"metric": "TotalNumberOfInputMessages", "processor": "IntProcessor", "unit": "count"},
+				{"metric": "TotalElapsedTime", "processor": "LongProcessor", "unit": "count"},
+				{"metric": "TotalCPUTime", "processor": "LongProcessor", "unit": "count"},
+				{"metric": "CPUTimeWaitingForInputMessage", "processor": "LongProcessor", "unit": "count"},
+				{"metric": "ElapsedTimeWaitingForInputMessage", "processor": "LongProcessor", "unit": "count"},
+				{"metric": "TotalSizeOfInputMessages", "processor": "LongProcessor", "unit": "count"},
+				{"metric": "MaximumSizeOfInputMessages", "processor": "LongProcessor", "unit": "count"},
+				{"metric": "MinimumSizeOfInputMessages", "processor": "LongProcessor", "unit": "count"}
+			]
+		}, 
+		{
+			"ElementType": "Nodes",
+			"metricPath": "Nodes",
+			"eventSubType": "Nodes",
+			"metrics": [
+				{"metric": "Number", "processor": "IntProcessor", "unit": "count"}
+			]
+		}, 
+		{
+			"ElementType": "NodeStatistics",
+			"metricPath": "NodeStatistics/{Type}/{Label}",
+			"eventSubType": "NodeStatistics",
+			"metrics": [
+				{"metric": "TotalElapsedTime", "processor": "LongProcessor", "unit": "time"},
+				{"metric": "MaximumElapsedTime", "processor": "LongProcessor", "unit": "time"},
+				{"metric": "MinimumElapsedTime", "processor": "LongProcessor", "unit": "time"},
+				{"metric": "TotalCPUTime", "processor": "LongProcessor", "unit": "time"},
+				{"metric": "MaximumCPUTime", "processor": "LongProcessor", "unit": "time"},
+				{"metric": "MinimumCPUTime", "processor": "LongProcessor", "unit": "time"},
+				{"metric": "CountOfInvocations", "processor": "LongProcessor", "unit": "time"},
+				{"metric": "NumberOfInputTerminals", "processor": "LongProcessor", "unit": "time"},
+				{"metric": "NumberOfOutputTerminals", "processor": "LongProcessor", "unit": "time"}
+			]
+		}
+	]
+}

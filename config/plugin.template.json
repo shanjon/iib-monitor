@@ -1,0 +1,16 @@
+{
+	"agents": [
+	           {
+	        	   "name": "",
+	        	   "host": "",
+	        	   "port": 1414,
+	        	   "login": false,
+	        	   "username": "",
+	        	   "password": "",
+	        	   "queueManager": "",
+	        	   "channel": "SYSTEM.DEF.SVRCONN",
+	        	   "topicNameResourceStatistics": "$SYS/Broker/+/ResourceStatistics/#",
+	        	   "topicNameStatisticsAccounting": "$SYS/Broker/+/StatisticsAccounting/#",
+	           }
+	           ]
+}

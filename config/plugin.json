@@ -1,0 +1,16 @@
+{
+	"agents": [
+	           {
+	        	   "name": "QM1",
+	        	   "host": "127.0.0.1",
+	        	   "port": 1414,
+	        	   "login": true,
+	        	   "username": "newrelic",
+	        	   "password": "passw0rd",
+	        	   "queueManager": "QM1",
+	        	   "channel": "IIB.SVRCONN",
+	        	   "topicNameResourceStatistics": "$SYS/Broker/+/ResourceStatistics/#",
+	        	   "topicNameStatisticsAccounting": "$SYS/Broker/+/StatisticsAccounting/#"
+	           }
+	]
+}

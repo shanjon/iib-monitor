@@ -1,0 +1,7 @@
+{
+	"license_key": "11111",
+	"guid": "com.newrelic.expertservices.websphere.messagebroker",
+	"insights_endpoint": "http://insights-collector.newrelic.com/v1/accounts/xxx/events",
+	"insert_key": "",
+	"log_level": "debug"
+}

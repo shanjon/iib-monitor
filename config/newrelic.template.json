@@ -1,0 +1,9 @@
+{
+	"license_key": "enter-your-license-key-here",
+	"guid": "com.newrelic.expertservices.websphere.messagebroker",
+	"insights_endpoint": "",
+	"insert_key": "",
+	"log_level": "info",
+	"proxy_host": "",
+	"proxy_port": ""
+}

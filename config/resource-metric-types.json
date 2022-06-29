@@ -1,0 +1,177 @@
+{
+	"MetricTypes": [
+		{
+			"resourceType/Id": "DotNet GC/summary",
+			"metricPath": "DotNetGC/Summary",
+			"eventSubType": "DotNetGCSummary",
+			"metrics": [
+				{"metric": "ExplicitGCCount", "processor": "IntProcessor", "unit": "count"},
+				{"metric": "Gen0CollectionsTaken", "processor": "IntProcessor", "unit": "count"},
+				{"metric": "Gen1CollectionsTaken", "processor": "IntProcessor", "unit": "count"},
+				{"metric": "Gen2CollectionsTaken", "processor": "IntProcessor", "unit": "count"},
+				{"metric": "Gen2CollectionsTaken", "processor": "IntProcessor", "unit": "count"},
+				{"metric": "CommittedInMB", "processor": "IntProcessor", "unit": "count"},
+				{"metric": "ReservedInMB", "processor": "IntProcessor", "unit": "count"},
+				{"metric": "Gen0HeapSizeInMB", "processor": "IntProcessor", "unit": "count"},
+				{"metric": "Gen1HeapSizeInMB", "processor": "IntProcessor", "unit": "count"},
+				{"metric": "Gen2HeapSizeInMB", "processor": "IntProcessor", "unit": "count"},
+				{"metric": "LargeObjectHeapSizeInMB", "processor": "IntProcessor", "unit": "count"},
+				{"metric": "PromotedFromGen0InMB", "processor": "IntProcessor", "unit": "count"},
+				{"metric": "PromotedFromGen1InMB", "processor": "IntProcessor", "unit": "count"}
+			]
+		}, 
+		{
+			"resourceType/Id": "JVM/summary",
+			"metricPath": "JVM/Summary",
+			"eventSubType": "JVMSummary",
+			"metrics": [
+				{"metric": "InitialMemoryInMB", "processor": "LongProcessor", "unit": "count"},
+				{"metric": "UsedMemoryInMB", "processor": "LongProcessor", "unit": "count"},
+				{"metric": "CommittedMemoryInMB", "processor": "LongProcessor", "unit": "count"},
+				{"metric": "MaxMemoryInMB", "processor": "LongProcessor", "unit": "count"},
+				{"metric": "CumulativeGCTimeInSeconds", "processor": "LongProcessor", "unit": "count"},
+				{"metric": "CumulativeNumberOfGCCollections", "processor": "LongProcessor", "unit": "count"}
+			]
+		}, 
+		{
+			"resourceType/Id": "JVM/Heap Memory",
+			"metricPath": "JVM/HeapMemory",
+			"eventSubType": "HeapMemory",
+			"metrics": [
+				{"metric": "InitialMemoryInMB", "processor": "LongProcessor", "unit": "count"},
+				{"metric": "UsedMemoryInMB", "processor": "LongProcessor", "unit": "count"},
+				{"metric": "CommittedMemoryInMB", "processor": "LongProcessor", "unit": "count"},
+				{"metric": "MaxMemoryInMB", "processor": "LongProcessor", "unit": "count"}
+			]
+		}, 
+		{
+			"resourceType/Id": "JVM/Non-Heap Memory",
+			"metricPath": "JVM/NonHeapMemory",
+			"eventSubType": "NonHeapMemory",
+			"metrics": [
+				{"metric": "InitialMemoryInMB", "processor": "LongProcessor", "unit": "count"},
+				{"metric": "UsedMemoryInMB", "processor": "LongProcessor", "unit": "count"},
+				{"metric": "CommittedMemoryInMB", "processor": "LongProcessor", "unit": "count"},
+				{"metric": "MaxMemoryInMB", "processor": "LongProcessor", "unit": "count"}
+			]
+		},
+		{
+			"resourceType/Id": "JVM/Garbage Collection - MarkSweepCompact",
+			"metricPath": "JVM/GarbageCollectionMSC",
+			"eventSubType": "GarbageCollectionMSC",
+			"metrics": [
+				{"metric": "CumulativeGCTimeInSeconds", "processor": "LongProcessor", "unit": "count"},
+				{"metric": "CumulativeNumberOfGCCollections", "processor": "LongProcessor", "unit": "count"}
+			]
+		},
+		{
+			"resourceType/Id": "DotNet App Domains/summary",
+			"metricPath": "DotNetAppDomains/summary",
+			"eventSubType": "DotNetAppDomainsSummary",
+			"metrics": [
+				{"metric": "CurrentlyInUseInMB", "processor": "LongProcessor", "unit": "count"},
+				{"metric": "TotalAllocatedInMB", "processor": "LongProcessor", "unit": "count"}
+			]
+		},
+		{
+			"resourceType/Id": "ODBC/summary",
+			"metricPath": "ODBC/summary",
+			"eventSubType": "ODBCSummary",
+			"metrics": [
+				{"metric": "ExecuteSuccess", "processor": "IntProcessor", "unit": "count"},
+				{"metric": "ExecuteFailure", "processor": "IntProcessor", "unit": "count"},
+				{"metric": "ActiveConnections", "processor": "IntProcessor", "unit": "count"},
+				{"metric": "ClosedConnections", "processor": "IntProcessor", "unit": "count"},
+				{"metric": "ConnectionErrors", "processor": "IntProcessor", "unit": "count"}
+			]
+		},
+        {
+			"resourceType/Id": "Security/summary",
+			"metricPath": "Security/summary",
+			"eventSubType": "SecuritySummary",
+			"metrics": [
+				{"metric": "TotalCacheEntries", "processor": "IntProcessor", "unit": "count"},
+				{"metric": "TotalOperations", "processor": "IntProcessor", "unit": "count"},
+				{"metric": "TotalSuccessfulOperations", "processor": "IntProcessor", "unit": "count"},
+				{"metric": "TotalOperationsServicedByCache", "processor": "IntProcessor", "unit": "count"}
+			]
+		},
+        {
+			"resourceType/Id": "CICS/summary",
+			"metricPath": "CICS/summary",
+			"eventSubType": "CICSSummary",
+			"metrics": [
+				{"metric": "RequestSuccess", "processor": "IntProcessor", "unit": "count"},
+				{"metric": "RequestFailures", "processor": "IntProcessor", "unit": "count"},
+				{"metric": "RequestSecurityFailures", "processor": "IntProcessor", "unit": "count"},
+				{"metric": "ConnectionAttemptFailures", "processor": "IntProcessor", "unit": "count"}
+			]
+		},
+        {
+			"resourceType/Id": "Sockets/summary",
+			"metricPath": "Sockets/summary",
+			"eventSubType": "SocketsSummary",
+			"metrics": [
+				{"metric": "TotalSockets", "processor": "IntProcessor", "unit": "count"},
+				{"metric": "TotalMessages", "processor": "IntProcessor", "unit": "count"},
+				{"metric": "TotalDataSent_KB", "processor": "LongProcessor", "unit": "count"},
+				{"metric": "TotalDataReceived_KB", "processor": "LongProcessor", "unit": "count"}
+			]
+		},
+        {
+			"resourceType/Id": "SOAPInput/summary",
+			"metricPath": "SOAPInput/summary",
+			"eventSubType": "SOAPInputSummary",
+			"metrics": [
+				{"metric": "InboundMessagesTotal", "processor": "IntProcessor", "unit": "count"},
+				{"metric": "RepliesSentTotal", "processor": "IntProcessor", "unit": "count"},
+				{"metric": "InboundMessagesMadeFlow", "processor": "IntProcessor", "unit": "count"},
+                {"metric": "InboundMessagesFaultedBeforeFlow", "processor": "IntProcessor", "unit": "count"},
+                {"metric": "SuccessfulRepliesSent", "processor": "IntProcessor", "unit": "count"},
+                {"metric": "FaultRepliesSent", "processor": "IntProcessor", "unit": "count"}
+			]
+		},
+        {
+			"resourceType/Id": "TCPIPServerNodes/summary",
+			"metricPath": "TCPIPServerNodes/summary",
+			"eventSubType": "TCPIPServerNodesSummary",
+			"metrics": [
+				{"metric": "OpenConnections", "processor": "IntProcessor", "unit": "count"},
+				{"metric": "ClosedConnections", "processor": "IntProcessor", "unit": "count"},
+				{"metric": "MessagesReceived", "processor": "IntProcessor", "unit": "count"},
+				{"metric": "MessagesSent", "processor": "IntProcessor", "unit": "count"},
+                {"metric": "BytesReceived", "processor": "LongProcessor", "unit": "count"},
+                {"metric": "BytesSent", "processor": "LongProcessor", "unit": "count"}
+			]
+		},
+        {
+			"resourceType/Id": "TCPIPClientNodes/summary",
+			"metricPath": "TCPIPClientNodes/summary",
+			"eventSubType": "TCPIPClientNodesSummary",
+			"metrics": [
+				{"metric": "OpenConnections", "processor": "IntProcessor", "unit": "count"},
+				{"metric": "ClosedConnections", "processor": "IntProcessor", "unit": "count"},
+				{"metric": "MessagesReceived", "processor": "IntProcessor", "unit": "count"},
+				{"metric": "MessagesSent", "processor": "IntProcessor", "unit": "count"},
+                {"metric": "BytesReceived", "processor": "LongProcessor", "unit": "count"},
+                {"metric": "BytesSent", "processor": "LongProcessor", "unit": "count"}
+			]
+		},
+		{
+			"resourceType/Id": "Parsers/summary",
+			"metricPath": "Parsers/summary",
+			"eventSubType": "ParsersSummary",
+			"metrics": [
+				{"metric": "Threads", "processor": "IntProcessor", "unit": "count"},
+				{"metric": "ApproxMemKB", "processor": "FloatProcessor", "unit": "count"},
+				{"metric": "MaxReadKB", "processor": "FloatProcessor", "unit": "count"},
+				{"metric": "MaxWrittenKB", "processor": "FloatProcessor", "unit": "count"},
+				{"metric": "Fields", "processor": "IntProcessor", "unit": "count"},
+				{"metric": "Reads", "processor": "IntProcessor", "unit": "count"},
+				{"metric": "FailedReads", "processor": "IntProcessor", "unit": "count"},
+				{"metric": "Writes", "processor": "IntProcessor", "unit": "count"},
+				{"metric": "FailedWrites", "processor": "IntProcessor", "unit": "count"}
+			]
+		}
+	]
+}
